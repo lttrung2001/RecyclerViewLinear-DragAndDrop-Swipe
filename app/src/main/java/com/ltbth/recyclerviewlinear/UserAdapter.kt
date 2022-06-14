@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class UserAdapter(private val users: List<User>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgUser = itemView.findViewById<ImageView>(R.id.img_user)!!
-        val tvName = itemView.findViewById<TextView>(R.id.tv_name)!!
+        val imgUser: ImageView = itemView.findViewById(R.id.img_user)
+        val tvName: TextView = itemView.findViewById(R.id.tv_name)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
